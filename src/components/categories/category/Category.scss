@@ -1,0 +1,17 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 25vw;
+  background: #700d0d;  
+  color: white;
+  margin: 20px;
+}
+
+.cat-img {
+  width: 20vw;
+  height: auto;
+  border-bottom: 1px solid white;
+}
