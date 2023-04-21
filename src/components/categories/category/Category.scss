@@ -8,6 +8,12 @@
   background: #700d0d;  
   color: white;
   margin: 20px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.category:hover {
+  transition: 0.25s;
+  border: 1px solid #fff;
 }
 
 .cat-img {
@@ -15,3 +21,4 @@
   height: auto;
   border-bottom: 1px solid white;
 }
+

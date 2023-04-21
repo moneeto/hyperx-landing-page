@@ -9,7 +9,7 @@ export const Categories = (props) => {
   return (
     <section id="categories-section">
       <div className="categories-content">
-        <h1 className="cat-main-title">Categorías:</h1>
+        <h1 className="cat-main-title">Principales categorías</h1>
         <div className="categories-list">
           <Category
           category="Headphones"
