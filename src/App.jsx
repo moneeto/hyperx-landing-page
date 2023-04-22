@@ -4,6 +4,7 @@ import { Welcome } from './components/welcome/Welcome.jsx'
 import { NewProducts } from './components/new-products/NewProducts.jsx'
 import { Categories } from './components/categories/Categories.jsx'
 import { Models } from './components/models/Models.jsx'
+import { Product } from './components/product/Product.jsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <NewProducts />
       <Categories />
       <Models />
+      <Product />
     </div>
   )
 }
