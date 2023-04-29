@@ -5,6 +5,7 @@ import { NewProducts } from './components/new-products/NewProducts.jsx'
 import { Categories } from './components/categories/Categories.jsx'
 import { Models } from './components/models/Models.jsx'
 import { Product } from './components/product/Product.jsx'
+import { DayOffer } from './components/day-offer/DayOffer.jsx'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Categories />
       <Models />
       <Product />
+      <DayOffer />
     </div>
   )
 }

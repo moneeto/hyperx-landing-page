@@ -33,7 +33,7 @@ export const Welcome = () => {
 
   return (
     <section id="welcome-section">
-      <div className="izquierda">
+      <div className="w-izquierda">
         <div className="welcome-main-text">
           <h1 className="welcome-main-title">When the sun shines...</h1>
           <p>It's time to improve yourself.</p>
@@ -45,8 +45,8 @@ export const Welcome = () => {
         </label>
       </div>
 
-      <div className="derecha">
-        <div className="image-div">
+      <div className="w-derecha">
+        <div className="w-image-div">
           <img
             className="h-img"
             src={Carrusel[indice]}

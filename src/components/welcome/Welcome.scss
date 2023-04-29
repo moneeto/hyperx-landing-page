@@ -6,7 +6,7 @@
   height: 100vh;
 }
 
-.izquierda, .derecha {
+.w-izquierda, .w-derecha {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
 }
 
 
-.image-div {
+.w-image-div {
   height: 600px;
   width: 800px;
 }
