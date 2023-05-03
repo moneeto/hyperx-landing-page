@@ -1,14 +1,25 @@
 #dayOffer1-section {
   width: 100%;
   height: 100vh;
-  background-color: rgb(98, 163, 90);
+  background-color: rgb(187, 187, 187);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.dOffer-img-div {
+#dayOffer2-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #941313;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.dOffer-img-div, .dOffer-derecha, .dOffer-izquierda{
   max-width: 500px;
 }
 
@@ -25,18 +36,33 @@
 .dOffer-title {
   font-size: 3em;
   font-weight: 300;
+  margin: 20px;
 }
 .dOffer-p {
   font-size: 1.3em;
 }
 .dOffer-button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 100%;
   margin-top: 10px;
+  padding: 5px;
   & :hover {
     background: none;
     color: white;
   }
 }
+
+.show-counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 14px;
+  padding: 20px;
+}
+
 
 .add-to-cart {
   border: 1px solid rgb(253, 253, 253);
@@ -57,3 +83,27 @@
   margin: 10px;
 }
 
+.timer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.dOffer-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.price {
+  background-color: #21611c;
+  padding: 25px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0px 0px 24px 5px rgba(255, 255, 255, 0.75);
+  color: white;
+}
