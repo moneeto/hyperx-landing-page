@@ -1,6 +1,7 @@
 import React from "react";
 import "./NewProducts.scss";
 import MouseImg from "../../media/mousehyperx.png.png"; // vite no usa require, sino que hay que importar la imagen
+import { Link } from "react-router-dom";
 
 export const NewProducts = () => {
   return (
@@ -10,11 +11,7 @@ export const NewProducts = () => {
           <h1 className="np-main-title">NEW PRODUCT</h1>
           <p className="np-subtitle">Cloud Stinger 2.</p>
         </div>
-        <a
-          href="https://www.google.com"
-          target="_self"
-          rel="noopener noreferrer"
-        >
+        <Link to={'/cloud-stinger-2'}>
           <div className="background-img">
             <img
 							className="np-img"
@@ -22,7 +19,7 @@ export const NewProducts = () => {
               alt="Cloud Stinger 2"
             />
           </div>
-        </a>
+        </Link>
       </div>
 
       <div className="np-derecha">
@@ -30,11 +27,7 @@ export const NewProducts = () => {
           <p className="np-subtitle">Carbon mecha V2.</p>
 					<h1 className="np-main-title">NEW PRODUCT</h1>
         </div>
-        <a
-          href="https://www.google.com"
-          target="_self"
-          rel="noopener noreferrer"
-        >
+        <Link to={'/carbon-mecha'}>
           <div className="background-img">
             <img
 							className="np-img"
@@ -42,7 +35,7 @@ export const NewProducts = () => {
               alt="Cloud Stinger 2"
             />
           </div>
-        </a>
+        </Link>
       </div>
     </section>
   );

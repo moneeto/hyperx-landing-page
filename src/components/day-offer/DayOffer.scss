@@ -11,7 +11,7 @@
 #dayOffer2-section {
   width: 100%;
   height: 100vh;
-  background-color: #941313;
+  background-color: #a5a5a5;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -41,16 +41,36 @@
 .dOffer-p {
   font-size: 1.3em;
 }
+
+.dOffer-arriba {
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.dOffer-abajo {
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .dOffer-button-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   margin-top: 10px;
   padding: 5px;
   & :hover {
     background: none;
-    color: white;
+    color: white;  
   }
 }
 
@@ -58,29 +78,27 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 14px;
   padding: 20px;
 }
 
-
 .add-to-cart {
   border: 1px solid rgb(253, 253, 253);
-  border-radius: 14px;
   padding: 5px;
-  transition: 0.25s;
-  background: white;
+  transition: 0.12s;
+  background: rgb(255, 255, 255);
   color: black;
+  width: 100%;
 }
 
 .buy-now {
-  border: 1px solid rgb(253, 253, 253);
-  border-radius: 14px;
+  border: 1px solid #dadada;
   padding: 5px;
-  transition: 0.25s;
+  transition: 0.12s;
   background: white;
   color: black;
-  margin: 10px;
+  width: 100%;
 }
 
 .timer {
@@ -97,13 +115,13 @@
   align-items: center;
   text-align: center;
   width: 100%;
+  margin: 20px 0;
 }
 
 .price {
   background-color: #21611c;
-  padding: 25px;
+  padding: 10px;
   width: 100%;
-  border-radius: 14px;
   box-shadow: 0px 0px 24px 5px rgba(255, 255, 255, 0.75);
   color: white;
 }

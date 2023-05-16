@@ -25,11 +25,10 @@ function App() {
       paragraph="Gaming mouse designed to garantize you the softly experience of the DPI"
       img={mousePulsefire}
       id="dayOffer1-section"
-      fontColor={{color: 'black'}}
+      fontColor={{color: 'white'}}
       number="1"
       price="$299"
       />
-      
       <DayOffer 
       title="HyperX Fury"
       paragraph="RAM Memory ready to optimizate your experience"

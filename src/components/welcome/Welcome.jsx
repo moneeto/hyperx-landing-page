@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "../../media/auriculares.png";
 import "./Welcome.scss";
 import { AiFillCaretRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export const Welcome = () => {
   const Carrusel = [
@@ -13,15 +14,14 @@ export const Welcome = () => {
   const [segundos, setSegundos] = useState(0);
   const [indice, setIndice] = useState(0);
 
-
   useEffect(() => {
     const interval = setInterval(() => {
       setSegundos((segundos) => segundos + 1);
     }, 1000);
-  
+
     return () => clearInterval(interval);
   }, []);
-  
+
   useEffect(() => {
     if (segundos % 6 === 0 && indice <= 2) {
       setIndice((indice) => indice + 1);
@@ -29,7 +29,6 @@ export const Welcome = () => {
       setIndice(0);
     }
   }, [segundos]);
-
 
   return (
     <section id="welcome-section">
@@ -39,10 +38,16 @@ export const Welcome = () => {
           <p>It's time to improve yourself.</p>
         </div>
 
-        <label className="vm-label">
-          <AiFillCaretRight />
-          <input type="button" className="vm-button" value="View More"></input>
-        </label>
+        <Link to={"/about"}>
+          <label className="vm-label">
+            <AiFillCaretRight />
+            <input
+              type="button"
+              className="vm-button"
+              value="View More"
+            ></input>
+          </label>
+        </Link>
       </div>
 
       <div className="w-derecha">

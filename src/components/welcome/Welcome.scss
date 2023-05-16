@@ -6,7 +6,8 @@
   height: 100vh;
 }
 
-.w-izquierda, .w-derecha {
+.w-izquierda,
+.w-derecha {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,8 +19,8 @@
   font-size: 3em;
 }
 
-
-.vm-label, .vm-button {
+.vm-label,
+.vm-button {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -33,11 +34,9 @@
   transition: 0.5s;
 }
 
-
 .vm-label {
   margin-top: 20px;
 }
-
 
 .w-image-div {
   height: 600px;
@@ -51,12 +50,77 @@
   transition: 0.5s;
 }
 
-
 @keyframes extender {
   0% {
     width: 10%;
   }
   100% {
     width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #welcome-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .w-derecha {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10%;
+  }
+
+  .w-izquierda {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding: 5px;
+    margin-top: 15%;
+  }
+  .welcome-main-text {
+    padding: 20px;
+  }
+  .welcome-main-title {
+    font-size: 2em;
+  }
+
+  .vm-label,
+  .vm-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: #941313;
+    transition: 0.5s;
+  }
+
+  .w-image-div {
+    height: 70%;
+    width: 90%;
+  }
+
+  .h-img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(20px 20px 10px #000000) contrast(120%);
+    transition: 0.5s;
   }
 }
