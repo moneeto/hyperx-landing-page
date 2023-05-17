@@ -54,10 +54,6 @@ export const Carrusel = () => {
           ►
         </button>
       </div>
-
-      <div className="abajo">
-        <a className="puntos">•</a>
-      </div>
     </div>
   );
 };

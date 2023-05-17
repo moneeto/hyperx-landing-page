@@ -4,6 +4,7 @@ import KeyboardBackground from "../../media/alloy-fps-02.jpg";
 
 export const Product = () => {
   const [dosSegundos, setDosSegundos] = useState(false);
+  const [widthChanged, setWidthChanged] = useState(false);
 
   const temporizador = () => {
     const timer = setTimeout(() => {
@@ -16,6 +17,14 @@ export const Product = () => {
   const componentRef = useRef(null);
 
   useEffect(() => {
+
+    const handleWindowSize = () => {
+        const windowWidth = window.innerWidth;
+        if (windowWidth <= 768) {
+          setWidthChanged(true)
+    }
+  }
+
     function handleScroll() {
       if (componentRef.current) {
         const { top } = componentRef.current.getBoundingClientRect();
@@ -29,7 +38,7 @@ export const Product = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
     };
   }, []);
 
@@ -39,9 +48,7 @@ export const Product = () => {
         <div className="product-content">
           <div className="product-text-div box">
             <div className="hola">
-              <div
-                className={dosSegundos ? "nine content" : "nine non-display"}
-              >
+              <div className={dosSegundos ? "nine content" : "nine non-display"}>
                 <h1>
                   HYPERX ALLOY FPS
                   <span>Mechanical and confortable keyboard</span>

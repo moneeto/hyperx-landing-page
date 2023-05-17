@@ -22,3 +22,30 @@
   border-bottom: 1px solid white;
 }
 
+@media (max-width:1150px) {
+  .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 220px;
+    background: #700d0d;  
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  .category:hover {
+    transition: 0.25s;
+    border: 1px solid #fff;
+  }
+  
+  .cat-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid white;
+  }
+  
+  
+}

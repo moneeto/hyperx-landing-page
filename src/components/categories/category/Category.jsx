@@ -12,7 +12,7 @@ export const Category = (props) => {
         />
       </div>
       
-      <h1>{props.category}</h1>
+      <h1 className="cat-name">{props.category}</h1>
     </a>
   );
 };
